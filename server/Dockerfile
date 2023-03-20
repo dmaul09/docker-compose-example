@@ -1,3 +1,5 @@
+FROM nginx 
+COPY ./default.conf /etc/nginx/conf.d/default.conf
 FROM node:alpine
 WORKDIR '/app'
 COPY ./package.json ./
